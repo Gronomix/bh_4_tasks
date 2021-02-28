@@ -17,12 +17,17 @@ lets_else(10) -> 7
 def lets_else(range_val: int) -> int:
     counter = 0
     for item in range(range_val):
-        pass
-    # TODO тут написать код
+        if counter == 7:
+            break
+        counter += 1
+    else:
+        return counter - 5
     return counter
+    # TODO тут написать код
+
 
 
 if __name__ == '__main__':
     assert lets_else(5) == -5
-    assert lets_else(7) == 7
+    assert lets_else(8) == 7
     print('Решено!')

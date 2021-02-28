@@ -26,7 +26,7 @@ def is_palindrome(check_str: str) -> bool:
     :rtype: bool
     """
     result = None
-    return result
+    return check_str.upper() == check_str.upper()[::2]
 
 
 if __name__ == '__main__':
