@@ -44,8 +44,10 @@ def get_seconds(h: int, m: int, s: int) -> Union[int, str]:
     :return: количество сеекунд от 00:00:00
     :rtype: int
     """
-    result = None
+    if isinstance(h, int) and isinstance(m, int) and isinstance(s, int):
+        result = (h * 3600) + (m * 60) + s
     return result
+
 
 
 if __name__ == '__main__':
