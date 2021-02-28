@@ -22,6 +22,24 @@ from typing import Union
 
 
 def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
+    some_list = ['*', '-', '+', '/']
+
+    if isinstance(num1, int)  and isinstance(num2, int):
+        if operation == '+':
+            return  num1 + num2
+        if operation == '/':
+            return num1 / num2
+        if operation == '-':
+            return num1 - num2
+        if operation == '*':
+            return num1 * num2
+        else:
+            print(f'Неизвестная операция! введите допустимые операции {some_list}')
+    else:
+        print("gg")
+
+
+
     result = None
     return result
 

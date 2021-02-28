@@ -18,4 +18,5 @@ def odd_sum(int_list: list) -> int:
 
 
 if __name__ == '__main__':
-    pass
+    try:
+    except
