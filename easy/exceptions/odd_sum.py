@@ -13,10 +13,21 @@ TypeError с сообщением "Все элементы списка долж
 
 
 def odd_sum(int_list: list) -> int:
-    result = None
-    return result
+    summ = 0
+    for number in int_list:
+        if isinstance(number, int):
+            if number % 2 == 1:
+                summ += number
+
+        else:
+            raise TypeError("Все элементы списка должны быть целыми числами")
+
+    return summ
 
 
 if __name__ == '__main__':
-    try:
-    except
+    int_list = [1, 2, 3, 4, 5, 'asd']
+    print(odd_sum(int_list))
+
+
+

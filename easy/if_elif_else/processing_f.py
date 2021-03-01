@@ -27,6 +27,10 @@ def processing_f(str_with_f: str) -> Union[int, str]:
     :return: строку или индекс
     :rtype: str
     """
+    if str_with_f.count('f') == 0:
+        str_with_f.
+
+
     result = None
     return result
 
