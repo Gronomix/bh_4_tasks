@@ -11,6 +11,10 @@ is_unique([2, 1, 5, 4, 2]) -> False
 
 
 def is_unique(array: list) -> bool:
+    if len(array) == len(set(array)):
+        return True
+    else:
+        return False
     result = None
     return result
 
