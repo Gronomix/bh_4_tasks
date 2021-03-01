@@ -9,11 +9,14 @@
 
 
 def multiplication_table(n: int) -> list:
-    # TODO тут написать код
+    s1 = 10
+    for i in range(1, s1+1):
+        print(*range(i, i * s1 +1, i), sep='\t')
+
     result = []
     return result
 
 
 if __name__ == '__main__':
-    assert multiplication_table(5) == [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+    assert multiplication_table(5) == [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
     print('Решено!')
