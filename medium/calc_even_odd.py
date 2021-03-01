@@ -23,7 +23,8 @@ def calc_even_odd(array: list) -> tuple:
         continue
 
 
-        return even, odd
+
+    return even, odd
 
 
 if __name__ == '__main__':
