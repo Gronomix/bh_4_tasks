@@ -51,10 +51,19 @@ def resolve_equation(a: float, b: float, c: float) -> tuple:
      первый корень, второй корень)
     :rtype: tuple
     """
-    d = None
-    n_var = None
-    var1 = None
-    var2 = None
+    d = (b_val ** 2) - (4 * (a_val * c_val))
+    print(d)
+    if d > 0:
+        n_var = 2
+        var1 = (- b_val + (0.5 ** d)) / 2 * a
+        var2 = (- b_val - (0.5 ** d)) / 2 * a
+    elif d == 0:
+        n_var = 1
+        var2 = var1 = (- b_val + (0.5 ** d)) / 2 * a
+    else:
+        n_var = var1 = var2 = None
+
+
     return d, n_var, var1, var2
 
 
