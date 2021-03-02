@@ -26,13 +26,13 @@ def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
 
     if isinstance(num1, int)  and isinstance(num2, int):
         if operation == '+':
-            return  num1 + num2
-        if operation == '/':
-            return num1 / num2
-        if operation == '-':
-            return num1 - num2
-        if operation == '*':
-            return num1 * num2
+            result = num1 + num2
+        elif operation == '/':
+            result = num1 / num2
+        elif operation == '-':
+            result = num1 - num2
+        elif operation == '*':
+            result = num1 * num2
         else:
             print(f'Неизвестная операция! введите допустимые операции {some_list}')
     else:
@@ -40,7 +40,7 @@ def calculator(num1: int, num2: int, operation: str) -> Union[int, float, str]:
 
 
 
-    result = None
+
     return result
 
 
