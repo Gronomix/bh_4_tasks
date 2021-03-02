@@ -19,15 +19,29 @@ def odd_sum(int_list: list) -> int:
             if number % 2 == 1:
                 summ += number
 
-        else:
-            raise TypeError("Все элементы списка должны быть целыми числами")
+        #else:
+            #raise TypeError("Все элементы списка должны быть целыми числами")
 
     return summ
 
 
+
 if __name__ == '__main__':
-    int_list = [1, 2, 3, 4, 5, 'asd']
-    print(odd_sum(int_list))
+    assert odd_sum([1, 2, 3, 4, 5]) == 9
+    print('В первом списке все числа целые')
+    assert odd_sum([1, 2, 3, 'asd']) != int
+    print('Решено!')
+
+    try:
+        odd_sum != int
+
+    except TypeError:
+        odd_sum = None
+
+
+    finally:
+        print('Во втором списке не все значения в списке целые числа')
+
 
 
 
