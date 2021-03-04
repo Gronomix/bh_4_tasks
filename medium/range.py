@@ -14,9 +14,17 @@ VALUE_LIST = ['a', 'b', 'c', 'd', 'e', 'f']
 
 
 def list_compose(indexes: list, values: list) -> list:
-    result_list = []
+    result = []
     # TODO тут надо написать цикл for
-    return result_list
+    for i in indexes:
+
+        if i >= len(values) or i < -len(values):
+
+            result.append(None)
+        else:
+            result.append(values[i])
+
+    return result
 
 
 if __name__ == '__main__':
