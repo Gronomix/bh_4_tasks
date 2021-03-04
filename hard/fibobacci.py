@@ -23,10 +23,24 @@
 Иногда ряд начинают с нуля: 0, 1, 1, 2, 3, 5, ... .
 В данном случае мы будем придерживаться первого варианта.
 """
-
+import math
 
 def fibonacci(n: int) -> int:
-    pass
+    fib1 = 1
+    fib2 = 1
+
+    n = input("Номер элемента ряда Фибоначчи: ")
+    n = int(n)
+
+    i = 0
+    while i < n - 2:
+        fib_sum = fib1 + fib2
+        fib1 = fib2
+        fib2 = fib_sum
+        i = i + 1
+
+
+
 
 
 if __name__ == '__main__':
